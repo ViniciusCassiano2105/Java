@@ -8,7 +8,7 @@ O repositório está organizado da seguinte forma:
 
 1. 📖 aulas_poo
 
-   Exercícios de Programação: Códigos desenvolvidos durante as aulas para praticar conceitos.
+   Códigos desenvolvidos durante as aulas para praticar conceitos.
 
 2. 💡 meus_projetos
 
