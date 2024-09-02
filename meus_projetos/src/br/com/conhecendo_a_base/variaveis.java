@@ -6,7 +6,7 @@ public class variaveis {
 		int dia = 29;
 		int mes = 04;
 		int ano = 2024;
-		
+
 		System.out.println(dia);
 		System.out.println(mes);
 		System.out.println(ano);
