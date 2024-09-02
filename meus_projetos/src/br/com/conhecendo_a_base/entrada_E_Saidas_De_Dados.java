@@ -11,12 +11,12 @@ public class entrada_E_Saidas_De_Dados {
 	 */
 
 	public static void main(String[] args) {
-//		// Leitura de dados de entrada
-//		System.out.println("Digite um numero:");
-//		Scanner scanner = new Scanner (System.in);
-//		int valorDigitado = scanner.nextInt();
-//		System.out.println(valorDigitado);
-//		scanner.close();
+		//Leitura de dados de entrada
+		System.out.println("Digite um numero:");
+		Scanner scanner = new Scanner (System.in);
+		int valorDigitado = scanner.nextInt();
+		System.out.println(valorDigitado);
+		scanner.close();
 		
 		// Saída de dados
 		float qualquerNumero = 3.0f;
