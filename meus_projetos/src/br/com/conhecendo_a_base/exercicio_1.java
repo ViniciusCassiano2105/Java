@@ -31,6 +31,7 @@ public class exercicio_1 {
 		nota2 = scanner.nextDouble();
 		System.out.println("Escreva a terceira nota:");
 		nota3 = scanner.nextDouble();
+		scanner.close();
 		media = (nota1 + nota2 + nota3) / 3;
 		System.out.printf ("A média do alino é %.2f",media);
 
