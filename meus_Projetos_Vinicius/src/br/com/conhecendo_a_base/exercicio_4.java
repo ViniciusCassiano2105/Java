@@ -1,3 +1,6 @@
+package br.com.conhecendo_a_base;
+
+import java.util.Scanner;
 /*
  * Escreva um programa que informe os relacionamentos de ordem existentes entre dois números: 
  * Igual, não igual, maior, menor, maior ou igual, menor ou igual.
@@ -8,8 +11,23 @@
  * Ex: Dados os números 2 e 3: 
  *  2 = 3 ? false, 2 != 3 ? true, ... , 2 <= 3 ? true
  */
-public class RelacionamentosDeOrdem {
+
+
+public class exercicio_4 {
   public static void main(String[] args) {
-    // Crie o seu programa aqui...
+    Scanner scanner = new Scanner(System.in);
+       System.out.println("Digite 2 números:");
+       int numero1 = scanner.nextInt();
+       int numero2 = scanner.nextInt();
+       
+       System.out.println(numero1 + " = " + numero2 + " ?" + (numero1 == numero2));
+       System.out.println(numero1 + " != " + numero2 + " ?" + (numero1 != numero2));
+       System.out.println(numero1 + " > " + numero2 + " ?" + (numero1 > numero2));
+       System.out.println(numero1 + " < " + numero2 + " ?" + (numero1 < numero2));
+       System.out.println(numero1 + " >= " + numero2 + " ?" + (numero1 >= numero2));
+       System.out.println(numero1 + " <= " + numero2 + " ?" + (numero1 <= numero2));
+       scanner.close();
+       
+    
   }
 }
