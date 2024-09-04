@@ -28,7 +28,7 @@ public class BigDecimalBalancoTri {
 		 * No entanto, é recomendável usar String ao criar BigDecimal a partir de valores 
 		 * decimais para evitar problemas de precisão.
 		 */
-		BigDecimal gastosJaneiro = new BigDecimal("1500.0");
+		BigDecimal gastosJaneiro = new BigDecimal("15000.0");
 		BigDecimal gastosFevereiro = new BigDecimal("23000.0");
 		BigDecimal gastosMarco = new BigDecimal("17000.0");
 
