@@ -24,10 +24,13 @@ public class BigDecimalBalancoTri {
 		 * crucial. Diferente de tipos primitivos como float e double, BigDecimal evita
 		 * problemas de arredondamento, fornecendo controle exato sobre operações
 		 * matemáticas e arredondamento.
+		 * Você pode criar instâncias de BigDecimal a partir de String, int, long, ou double. 
+		 * No entanto, é recomendável usar String ao criar BigDecimal a partir de valores 
+		 * decimais para evitar problemas de precisão.
 		 */
-		BigDecimal gastosJaneiro = new BigDecimal("1500");
-		BigDecimal gastosFevereiro = new BigDecimal("23000");
-		BigDecimal gastosMarco = new BigDecimal("17000");
+		BigDecimal gastosJaneiro = new BigDecimal("1500.0");
+		BigDecimal gastosFevereiro = new BigDecimal("23000.0");
+		BigDecimal gastosMarco = new BigDecimal("17000.0");
 
 		BigDecimal gastosTrimestre = gastosJaneiro.add(gastosFevereiro).add(gastosMarco);
 
