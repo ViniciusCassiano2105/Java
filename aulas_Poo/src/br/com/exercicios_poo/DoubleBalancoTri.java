@@ -23,7 +23,7 @@ public class DoubleBalancoTri {
 			
 			gastosTrimestre= gastosJaneiro + gastosFevereiro + gastosMarco;
 			
-			System.out.println("O gasto trimestral da empresa é: R$" + gastosTrimestre);
+			System.out.printf("O gasto trimestral da empresa é: R$%.2f", gastosTrimestre);
 	}
 	
 }
