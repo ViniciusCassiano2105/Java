@@ -19,6 +19,8 @@ public class Estrutura_Switch {
 					case "D" -> System.out.println("Ruim");
 					case "F" -> System.out.println("Péssimo");
 					default -> System.out.println("Opção invalida");
+					
+					
 				}
 	}
 
