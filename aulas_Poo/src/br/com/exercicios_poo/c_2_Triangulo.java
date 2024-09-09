@@ -13,7 +13,7 @@ public class c_2_Triangulo {
 		int angulo2 = scanner.nextInt();
 		System.out.println("Terceiro ângulo:");
 		int angulo3 = scanner.nextInt();
-		
+		scanner.close();
 		if(angulo1 + angulo2 + angulo3 != 180) {
 			System.out.println("Os ângulos fornecidos não formam um triângulo válido.");
 		}else if(angulo1 == 90 || angulo2 == 90 || angulo3 ==90 ){
