@@ -3,7 +3,7 @@ package br.com.exercicios_poo;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class f_multiplosde6 {
+public class G_multiplosde6 {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
