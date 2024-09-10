@@ -45,6 +45,9 @@ public class g_Estudos_Da_Madrugada {
 		
 		// Exibe a mensagem formatada no log
 		logger.info(mensagem);
+		
+		//Fecha Scanner
+		scanner.close();
 	}
 
 }
