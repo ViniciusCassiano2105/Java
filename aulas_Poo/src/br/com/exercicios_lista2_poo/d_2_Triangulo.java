@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 import br.com.aula_poo.utils.Util;
 
-public class c_2_Triangulo {
+public class d_2_Triangulo {
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 
 	public static void main(String[] args) {
