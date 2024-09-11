@@ -2,7 +2,7 @@ package br.com.exercicios_lista2_poo;
 
 import java.util.Scanner;
 
-public class c_2Estoque {
+public class c_2_Estoque {
 
 	public static void main(String[] args) {
 		String[] estoque = { "Mouse", "Teclado", "Monitor", "SSD", "Placa de vídeo" };
