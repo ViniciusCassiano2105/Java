@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 import br.com.aula_poo.utils.Util;
 
-public class e_apolo {
+public class e_Apolo {
 
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 

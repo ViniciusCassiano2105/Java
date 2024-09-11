@@ -7,7 +7,7 @@ import br.com.aula_poo.utils.Util;
 
 import java.time.Year;
 
-public class b_minhaIdade {
+public class b_MinhaIdade {
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 
 	public static void main(String[] args) {

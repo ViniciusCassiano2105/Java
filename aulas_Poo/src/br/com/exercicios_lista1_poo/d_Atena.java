@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 import br.com.aula_poo.utils.Util;
 
-public class d_atena {
+public class d_Atena {
 
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 

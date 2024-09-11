@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 import br.com.aula_poo.utils.Util;
 
-public class b_hera {
+public class b_Hera {
 
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 

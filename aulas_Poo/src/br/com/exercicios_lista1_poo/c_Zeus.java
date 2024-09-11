@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 
 import br.com.aula_poo.utils.Util;
 
-public class c_zeus {
+public class c_Zeus {
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 
 	public static void main(String[] args) {
