@@ -1,13 +1,52 @@
-package br.com.exercicios_poo;
+package br.com.exercicios_lista2_poo;
+
+import java.util.Scanner;
+import java.util.logging.Logger;
+
+import br.com.aula_poo.utils.Util;
 
 public class a_2_Universo {
 
+	private static Logger logger = Logger.getLogger(Util.class.getName());
+
 	public static void main(String[] args) {
-		int UNIVERSO = 42;
-		// Exibe a pergunta e o número do universo
-		System.out.println("“Qual o significado da vida, do universo e tudo mais?”");
-		System.out.println("O número do universo é: " + UNIVERSO);
 
+		// Criando um scanner para ler a entrada do usuário
+		Scanner scanner = new Scanner(System.in);
+
+		int tentativas = 3;
+		int universo = 42;
+
+		// Laço para dar 3 tentativas ao usuário
+
+		while (tentativas > 0) {
+			logger.warning("Qual o significado da vida, do universo e tudo mais?");
+
+			// Lê a entrada do usuário
+			int resposta = scanner.nextInt();
+
+			// Verifica se a resposta está correta
+			if (resposta == universo) {
+				String mensagemSignificado = String
+						.format("Você acertou! O significado da vida, do universo e tudo mais é: %s", universo);
+				logger.info(mensagemSignificado);
+				break;
+			} else {
+				tentativas--;
+				if (tentativas > 0) {
+					String mensagemTentativa = String.format("Você está errado. Tentativas restantes: %d", tentativas);
+					logger.info(mensagemTentativa);
+				} else {
+
+					logger.info("Você está errado.");
+					String mensagemUniverso = String.format("O significado da vida, do universo e tudo mais é: %s", universo);
+					logger.info(mensagemUniverso);
+
+				}
+			}
+		}
+
+		// Fechando o scanner
+		scanner.close();
 	}
-
 }
