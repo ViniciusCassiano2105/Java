@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 import br.com.aula_poo.utils.Util;
 
-public class f_Converter {
+public class e_Converter {
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 
 	public static void main(String[] args) throws InterruptedException {

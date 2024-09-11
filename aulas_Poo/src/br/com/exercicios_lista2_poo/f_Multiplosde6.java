@@ -1,59 +1,51 @@
-package br.com.exercicios_poo;
+package br.com.exercicios_lista2_poo;
 
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
-public class G_multiplosde6 {
-    
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        int inicio, fim;
-        do {
-            System.out.print("Digite o valor inicial do intervalo (deve ser maior que 100): ");
-            inicio = scanner.nextInt();
-            System.out.print("Digite o valor final do intervalo (deve ser maior que o valor inicial): ");
-            fim = scanner.nextInt();
-            
-            if (inicio <= 100 || fim <= inicio) {
-                System.out.println("Intervalo inválido! O valor inicial deve ser maior que 100 e o valor final deve ser maior que o valor inicial.");
-            }
-        } while (inicio <= 100 || fim <= inicio);
-        
-        
-        ArrayList<Integer> multiplosDe6 = new ArrayList<>();
-        
-        for (int i = inicio; i <= fim; i++) {
-            if (i % 6 == 0) {
-                multiplosDe6.add(i);
-            }
-        }
-        
-        
-        if (multiplosDe6.size() < 6) {
-            System.out.println("Não há múltiplos de 6 suficientes no intervalo para realizar a operação.");
-        } else {
-           
-            int soma = 0;
-            
-            
-            System.out.println("Os três primeiros múltiplos de 6 no intervalo são:");
-            for (int i = 0; i < 3; i++) {
-                System.out.println(multiplosDe6.get(i));
-                soma += multiplosDe6.get(i);
-            }
-            
-            
-            System.out.println("Os três últimos múltiplos de 6 no intervalo são:");
-            for (int i = multiplosDe6.size() - 3; i < multiplosDe6.size(); i++) {
-                System.out.println(multiplosDe6.get(i));
-                soma += multiplosDe6.get(i);
-            }
-            
-           
-            System.out.println("A soma dos três primeiros e três últimos múltiplos de 6 é: " + soma);
-        }
-        
-        scanner.close();  
-    }
+import br.com.aula_poo.utils.Util;
+
+public class f_Multiplosde6 {
+	private static Logger logger = Logger.getLogger(Util.class.getName());
+
+	public static void main(String[] args) {
+
+		int i;
+
+		// Criando o scanner para ler a entrada do usuário
+		Scanner scanner = new Scanner(System.in);
+
+		// Exibe a mensagem inicial
+		logger.warning("Escreva 2 números acima de 100:");
+
+		// Lê o primeiro número e verifica se é maior que 100
+		logger.info("1º número:");
+		int num1 = scanner.nextInt();
+		while (num1 < 100) {
+			logger.info("Digite um número maior que 100:");
+			num1 = scanner.nextInt();
+		}
+
+		// Lê o segundo número e verifica se é maior que 100
+		logger.info("2º número:");
+		int num2 = scanner.nextInt();
+		while (num2 < 100) {
+			logger.info("Digite um número maior que 100:");
+			num2 = scanner.nextInt();
+		}
+
+		// Loop para encontrar e exibir os múltiplos de 6 no intervalo
+
+		String mensagemMultiplo = String.format("Múltiplos de 6 entre %d e %d:", num1, num2);
+		logger.info(mensagemMultiplo);
+		for (i = num1; i <= num2; i++) {
+			if (i % 6 == 0) {
+				String mensagemResultado = String.format("Resultado: %d", i);
+				logger.info(mensagemResultado); // Exibe o número se for múltiplo de 6
+			}
+		}
+
+		// Fecha o scanner
+		scanner.close();
+	}
 }

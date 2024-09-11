@@ -5,21 +5,24 @@ import java.util.logging.Logger;
 
 import br.com.aula_poo.utils.Util;
 
-public class c_2_Estoque {
+public class c_Estoque {
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 
 	public static void main(String[] args) {
 		String[] estoque = { "Mouse - 10un", "Teclado - 15un", "Monitor - 5un", "SSD - 3un", "Placa de vídeo - 2un" };
 		String[] semEstoque = { "Caixa de som", "Placa de vídeo", "Mousepad", "Cadeira Gamer" };
-		
+
 		boolean programa = true;
-		
+
 		while (programa) {
 			logger.warning("Escolha as opções que deseja visualizar:\n" + "(1) Produtos em estoque\n"
 					+ "(2) Produtos sem estoque\n(3) Sair");
+			
+			// Criando um scanner para ler a entrada do usuário
 			Scanner scanner = new Scanner(System.in);
 			int opcao = scanner.nextInt();
 
+			//Escolhas do usuário
 			switch (opcao) {
 			case 1:
 				// Produtos em estoque
@@ -46,17 +49,17 @@ public class c_2_Estoque {
 				switch (escolha.toUpperCase()) {
 				case "S":
 					logger.info("Obrigado por utilizar nosso programa :)");
-					programa = false; 
+					programa = false;
 					break;
 
 				case "N":
 					logger.info("Voltando ao menu...");
 					break;
-					
+
 				}
-				 scanner.close();
+				scanner.close();
 			}
 		}
-		
+
 	}
 }
