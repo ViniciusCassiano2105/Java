@@ -46,7 +46,7 @@ public class a_2_Universo {
 			}
 		}
 
-		// Fechando o scanner
+		// Fecha o scanner
 		scanner.close();
 	}
 }
