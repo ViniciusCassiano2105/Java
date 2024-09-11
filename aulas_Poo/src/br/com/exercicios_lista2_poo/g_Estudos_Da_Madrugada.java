@@ -18,11 +18,11 @@ public class g_Estudos_Da_Madrugada {
 		// Pergunta ao usuário quantos estudantes têm na turma
 		logger.info("Quantos estudantes têm na turma?\n");
 
-		//	entrada do usuário, que informa a quantidade de estudantes
+		//	Entrada do usuário, que informa a quantidade de estudantes
 		Scanner scanner = new Scanner(System.in);
 		double qtdTurma = scanner.nextDouble();
 		
-		//  mensagem de "Aguarde" e simula uma espera com pontos
+		//  Mensagem de "Aguarde" e simula uma espera com pontos
 		logger.warning("Aguarde\n");
 		Thread.sleep(1000);
 		logger.info(".");
