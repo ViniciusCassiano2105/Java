@@ -43,9 +43,10 @@ public class f_Multiplosde6 {
 				String mensagemResultado = String.format("Resultado: %d", i);
 				logger.info(mensagemResultado); // Exibe o número se for múltiplo de 6
 			}
+			
+			// Fecha o scanner
+			scanner.close();
 		}
 
-		// Fecha o scanner
-		scanner.close();
 	}
 }
