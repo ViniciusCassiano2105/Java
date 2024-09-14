@@ -16,9 +16,11 @@ public class Mensagem {
 	// Mensagens opção
 	public static final String OPCAO_EXIBIR_RELATORIO = "Exibindo relatório";
 	public static final String OPCAO_GERAR_RELATORIO = "Imprimindo relatório";
-	public static final String OPCAO_PERGUNTA_SAIR_SISTEMA = "Deseja realmente sair:\n\t(S/N) ";
-	public static final String OPCAO_SIM_SAIR_SISTEMA = "S";
-	public static final String OPCAO_NAO_SAIR_SISTEMA = "N";
+	public static final String OPCAO_PERGUNTA_SAIR_SISTEMA = "Deseja realmente sair:\n\t\t(S/N) ";
+	public static final String OPCAO_SIM_OBRIGADO_UTILIZAR_SISTEMA = "Obrigado por utilizar nossa aplicação, até breve! :P";
+	public static final String OPCAO_NAO_VOLTANDO_SISTEMA = "Voltando para o MENU";
+	public static final String OPCAO_INVALIDA = "Opção invalida, erro 404...";
+	
 	
 	
 }
