@@ -1,4 +1,4 @@
-package projeto_Individual_Poo;
+package br.com.cinema_filme_menu_poo;
 
 public class Menu {
 
