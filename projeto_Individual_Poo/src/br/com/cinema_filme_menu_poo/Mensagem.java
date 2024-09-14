@@ -9,7 +9,16 @@ public class Mensagem {
 
 	// Mensagens de escolhas
 	public static final String ESCOLHA = "Olá %s escolha uma opção:";
-	public static final String EXBIR_RELATORIO = "(1) Exibir relatório na tela";
+	public static final String EXIBIR_RELATORIO = "(1) Exibir relatório na tela";
 	public static final String GERAR_RELATORIO = "(2) Gerar relatório impresso";
 	public static final String SAIR = "(3) Sair";
+	
+	// Mensagens opção
+	public static final String OPCAO_EXIBIR_RELATORIO = "Exibindo relatório";
+	public static final String OPCAO_GERAR_RELATORIO = "Imprimindo relatório";
+	public static final String OPCAO_PERGUNTA_SAIR_SISTEMA = "Deseja realmente sair:\n\t(S/N) ";
+	public static final String OPCAO_SIM_SAIR_SISTEMA = "S";
+	public static final String OPCAO_NAO_SAIR_SISTEMA = "N";
+	
+	
 }
