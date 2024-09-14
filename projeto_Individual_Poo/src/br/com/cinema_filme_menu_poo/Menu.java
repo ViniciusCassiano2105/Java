@@ -39,16 +39,29 @@ public class Menu {
 		case 3:
 			logger.info(Mensagem.OPCAO_PERGUNTA_SAIR_SISTEMA);
 			
+			
 			String selecao = scanner.next();
+			
 			switch(selecao.toUpperCase()) {
 			case "S":
-				logger.info(Mensagem.OPCAO_SIM_SAIR_SISTEMA);
+				logger.info(Mensagem.OPCAO_SIM_OBRIGADO_UTILIZAR_SISTEMA);
+				escolha = false;
 				break;
 				
 			case "N":
-				logger.info(Mensagem.OPCAO_NAO_SAIR_SISTEMA);
+				logger.info(Mensagem.OPCAO_NAO_VOLTANDO_SISTEMA);
+				break;
+				
+			default:
+				logger.info(Mensagem.OPCAO_INVALIDA);
+				break;
 			
 			}
+			break;
+			
+		default:
+			logger.info(Mensagem.OPCAO_INVALIDA);
+			break;
 		
 		}
 		
