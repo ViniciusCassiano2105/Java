@@ -17,12 +17,10 @@ public class Menu {
 		Scanner scanner = new Scanner(System.in);
 		String nome = scanner.next();
 
-		
-			logger.info(String.format(Mensagem.ESCOLHA, nome));
-			logger.info(Mensagem.EXBIR_RELATORIO);
-			logger.info(Mensagem.GERAR_RELATORIO);
-			logger.info(Mensagem.SAIR);
+		logger.info(String.format(Mensagem.ESCOLHA, nome));
+		logger.info(Mensagem.EXBIR_RELATORIO);
+		logger.info(Mensagem.GERAR_RELATORIO);
+		logger.info(Mensagem.SAIR);
 
-		
 	}
 }
