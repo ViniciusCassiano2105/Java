@@ -11,19 +11,18 @@ public class Menu {
 	public static void main(String[] args) {
 
 		boolean escolha = true;
-		
-		Scanner scanner = new Scanner(System.in);
-
 		logger.info(Mensagem.BEM_VINDO);
 		logger.info(Mensagem.LOGO);
 		logger.info(Mensagem.PERGUNTA_NOME);
+		Scanner scanner = new Scanner(System.in);
 		String nome = scanner.next();
-		while (escolha) {
-			logger.info(Mensagem.ESCOLHA);
+
+		
+			logger.info(String.format(Mensagem.ESCOLHA, nome));
 			logger.info(Mensagem.EXBIR_RELATORIO);
 			logger.info(Mensagem.GERAR_RELATORIO);
 			logger.info(Mensagem.SAIR);
 
-		}
+		
 	}
 }

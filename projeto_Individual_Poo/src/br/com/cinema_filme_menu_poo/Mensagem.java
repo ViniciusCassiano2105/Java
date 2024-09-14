@@ -8,7 +8,7 @@ public class Mensagem {
 	public static final String PERGUNTA_NOME = "Digite como gostaria de ser chamado(a):";
 
 	// Mensagens de escolhas
-	public static final String ESCOLHA = "Escolha uma opção:";
+	public static final String ESCOLHA = "Olá %s escolha uma opção:";
 	public static final String EXBIR_RELATORIO = "(1) Exibir relatório na tela";
 	public static final String GERAR_RELATORIO = "(2) Gerar relatório impresso";
 	public static final String SAIR = "(3) Sair";
