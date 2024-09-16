@@ -5,6 +5,8 @@ public class Cinema {
 	int sala;
 	double valor;
 	String nome;
+	String horario;
+	
 	public int getIdcinema() {
 		return idcinema;
 	}
@@ -35,7 +37,7 @@ public class Cinema {
 	public void setHorario(String horario) {
 		this.horario = horario;
 	}
-	String horario;
+	
 	
 	
 }

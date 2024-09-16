@@ -8,20 +8,24 @@ import br.com.aula_poo.utils.Util;
 public class Menu {
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		boolean escolha = true;
 		LeitorArquivo.leitor("Banco");
 		
 		
-		logger.info(Mensagem.BEM_VINDO);
+
 		logger.info(Mensagem.LOGO);
+		Thread.sleep(4000);
+		logger.info(Mensagem.BEM_VINDO);
 		logger.info(Mensagem.PERGUNTA_NOME);
 		Scanner scanner = new Scanner(System.in);
 		String nome = scanner.next();
-		
+		logger.info(Mensagem.AGUARDE);
+		Thread.sleep(4000);
 		while(escolha) {
-			
+
 		logger.info(String.format(Mensagem.ESCOLHA, nome));
+		
 		logger.info(Mensagem.EXIBIR_RELATORIO);
 		logger.info(Mensagem.GERAR_RELATORIO);
 		logger.info(Mensagem.SAIR);
