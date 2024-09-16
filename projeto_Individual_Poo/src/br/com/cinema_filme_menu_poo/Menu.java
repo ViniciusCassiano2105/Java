@@ -9,10 +9,10 @@ public class Menu {
 	private static Logger logger = Logger.getLogger(Util.class.getName());
 
 	public static void main(String[] args) {
-
+		boolean escolha = true;
 		LeitorArquivo.leitor("Banco");
 		
-		boolean escolha = true;
+		
 		logger.info(Mensagem.BEM_VINDO);
 		logger.info(Mensagem.LOGO);
 		logger.info(Mensagem.PERGUNTA_NOME);
