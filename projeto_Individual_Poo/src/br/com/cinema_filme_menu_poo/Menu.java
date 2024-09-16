@@ -10,6 +10,8 @@ public class Menu {
 
 	public static void main(String[] args) {
 
+		LeitorArquivo.leitor("Banco");
+		
 		boolean escolha = true;
 		logger.info(Mensagem.BEM_VINDO);
 		logger.info(Mensagem.LOGO);
