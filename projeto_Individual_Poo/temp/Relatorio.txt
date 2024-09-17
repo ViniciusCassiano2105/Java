@@ -1,0 +1,12 @@
+Cinema,1,Cinema Central,1,14:00,25.50
+Cinema,2,Cinema Norte,2,16:00,30.00
+Cinema,3,Cinema Sul,3,18:30,28.75
+Cinema,4,Cinema Leste,4,20:00,27.50
+Cinema,5,Cinema Oeste,5,21:30,22.00
+Filme,1,Interestelar,Ficção,180
+Filme,2,Vingadores: Ultimato,Ação,130
+Filme,3,O Senhor Dos Aneis,Ação,190
+Filme,4,A Origem,Ficção,148
+Filme,5,Matrix,Ficção,136
+Filme,6,Parasita,Drama,132
+Filme,7,Coringa,Drama,122
