@@ -1,10 +1,10 @@
-package br.com.cinema_filme_menu_poo;
+package br.com.imperial_flix_mensagem;
 
 public class Mensagem {
 
 	// Mensagens Iniciais
 	public static final String BEM_VINDO = "\n--------------- SEJA BEM VINDO(A) A MAIOR REDE DE CINEMAS DO BRASIL ---------------\n\n";
-	public static final String LOGO = "\n\t\t\t    IMPERIAL\n\n\t\t\t      FLIX\n";
+	public static final String LOGO = "\n\t\t\t\t   IMPERIAL\n\n\t\t\t\t     FLIX\n";
 	public static final String PERGUNTA_NOME = "Digite como gostaria de ser chamado(a):";
 
 	// Mensagens de escolhas
@@ -12,15 +12,15 @@ public class Mensagem {
 	public static final String ESCOLHAOPCAOEXIBIR = "Escolha uma opção para exibir:";
 	public static final String ESCOLHAEXIBIR = "(1) Exibir Informações";
 	public static final String ESCOLHAGERAR = "(2) Gerar Ticket Impresso";
-	public static final String EXIBIR_RELATORIO_FILMES = "(3) Filmes em cartaz";
-	public static final String EXIBIR_RELATORIO_CINEMA = "(4) rede de Cinemas";
+	public static final String EXIBIR_RELATORIO_FILMES = "(4) Filmes em cartaz";
+	public static final String EXIBIR_RELATORIO_CINEMA = "(5) Rede de Cinemas";
 	public static final String ESCOLHAOPCAOGERAR = "Escolha uma opção para gerar:";
-	public static final String GERAR_RELATORIO_FILMES = "(3) Ticket de Filmes";
-	public static final String GERAR_RELATORIO_CINEMA = "(4) Ticket de Cinemas";
-	public static final String VOLTARMENU = "(5) Voltar ao menu principal";
+	public static final String GERAR_RELATORIO_FILMES = "(4) Ticket de Filmes";
+	public static final String GERAR_RELATORIO_CINEMA = "(5) Ticket de Cinemas";
+	public static final String VOLTARMENU = "(6) Voltar ao menu principal";
 	public static final String DESEJASAIR = "Deseja sair do sistema? (S/N)";
 	public static final String SAIR = "(3) Sair";
-	public static final String SAIRSUB = "(5) Sair";
+	public static final String SAIRSUB = "(7) Sair";
 	
 
 	// Mensagens de espera
