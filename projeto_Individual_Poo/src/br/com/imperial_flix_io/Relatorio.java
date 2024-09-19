@@ -33,13 +33,12 @@ public class Relatorio {
         Path arquivoRelatorio = Paths.get(caminhoArquivo);
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(arquivoRelatorio.toFile(), true))) {
-            if (cinemas != null && !cinemas.isEmpty()) {  // Verifica se há cinemas no mapa
+            if (cinemas != null && !cinemas.isEmpty()) { 
                 writer.write("=========================\n");
                 writer.write("         Cinemas\n");
                 writer.write("=========================\n");
 
                 for (Cinema cinema : cinemas.values()) {
-                    // Escreve os detalhes de cada cinema
                     writer.write("Nome: " + cinema.getNome() + "\n");
                     writer.write("Sala: " + cinema.getSala() + "\n");
                     writer.write("Horário: " + cinema.getHorario() + "\n");
@@ -50,7 +49,6 @@ public class Relatorio {
                 writer.write("Nenhum cinema cadastrado.\n");
             }
 
-            // Adiciona a data e hora no final do relatório
             LocalDateTime agora = LocalDateTime.now();
             DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
             String dataHoraFormatada = agora.format(formatador);
@@ -64,7 +62,6 @@ public class Relatorio {
         }
     }
 
-    // Método para gerar o relatório de filmes com o cinema correspondente
     public static void gerarRelatorioFilmes(Map<Integer, Cinema> cinemas, Map<Integer, Filme> filmes, String caminhoArquivo) {
         Path diretorio = Paths.get("temp");
         if (Files.notExists(diretorio)) {
@@ -80,16 +77,14 @@ public class Relatorio {
         Path arquivoRelatorio = Paths.get(caminhoArquivo);
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(arquivoRelatorio.toFile(), true))) {
-            if (filmes != null && !filmes.isEmpty()) {  // Verifica se há filmes no mapa
+            if (filmes != null && !filmes.isEmpty()) { 
                 writer.write("=========================\n");
                 writer.write(" Programação de Filmes\n");
                 writer.write("=========================\n");
 
                 for (Filme filme : filmes.values()) {
-                    // Encontra o cinema correspondente ao filme
                     Cinema cinemaAssociado = cinemas.get(filme.getIdCinema());
 
-                    // Escreve os detalhes do filme e o cinema correspondente
                     writer.write("Nome: " + filme.getNome() + "\n");
                     writer.write("Gênero: " + filme.getGenero() + "\n");
                     writer.write("Duração: " + filme.getDuracao() + " minutos\n");
@@ -104,7 +99,6 @@ public class Relatorio {
                 writer.write("Nenhum filme cadastrado.\n");
             }
 
-            // Adiciona a data e hora no final do relatório
             LocalDateTime agora = LocalDateTime.now();
             DateTimeFormatter formatador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
             String dataHoraFormatada = agora.format(formatador);

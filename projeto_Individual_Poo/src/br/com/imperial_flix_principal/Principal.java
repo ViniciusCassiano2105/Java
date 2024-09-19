@@ -32,7 +32,7 @@ public class Principal {
 
             switch (opcao) {
                 case 1 -> exibirRelatorios(scanner);
-                case 2 -> gerarRelatorios(scanner);  // Correção: Agora chama o método correto para cada tipo de relatório
+                case 2 -> gerarRelatorios(scanner);
                 case 3 -> continuar = confirmarSaida(scanner);
                 default -> logger.info(Mensagem.OPCAO_INVALIDA);
             }
@@ -88,14 +88,12 @@ public class Principal {
             logger.info(Mensagem.GERANDO_RELATORIO_FILMES);
             logger.info(Mensagem.AGUARDE);
             Thread.sleep(2000);
-            // Correção: Usando o método correto para gerar o relatório de filmes
             Relatorio.gerarRelatorioFilmes(LeitorArquivo.getMapCinemas(), LeitorArquivo.getMapFilmes(), RELATORIO_FILE_FILMES);
             exibirRelatorio(RELATORIO_FILE_FILMES);
         } else if (opcao == 5) {
             logger.info(Mensagem.GERANDO_RELATORIO_CINEMA);
             logger.info(Mensagem.AGUARDE);
             Thread.sleep(2000);
-            // Correção: Usando o método correto para gerar o relatório de cinemas
             Relatorio.gerarRelatorioCinemas(LeitorArquivo.getMapCinemas(), RELATORIO_FILE_CINEMAS);
             exibirRelatorio(RELATORIO_FILE_CINEMAS);
         } else {
