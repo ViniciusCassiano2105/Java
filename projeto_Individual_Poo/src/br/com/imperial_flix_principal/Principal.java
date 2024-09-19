@@ -1,4 +1,4 @@
-package br.com_imperial_flix_principal;
+package br.com.imperial_flix_principal;
 
 import java.io.File;
 import java.io.FileNotFoundException;
