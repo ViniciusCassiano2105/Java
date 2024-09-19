@@ -36,7 +36,7 @@ public class Mensagem {
 	public static final String OPCAO_EXIBIR_RELATORIO = "Exibindo relatório";
 	public static final String OPCAO_GERAR_RELATORIO = "Imprimindo relatório";
 	public static final String OPCAO_PERGUNTA_SAIR_SISTEMA = "Deseja realmente sair:\n\t\t(S/N) ";
-	public static final String OPCAO_SIM_OBRIGADO_UTILIZAR_SISTEMA = "Obrigado por utilizar nossa aplicação, até breve! :P";
+	
 
 	
 	// Mensagem de loop
@@ -44,6 +44,7 @@ public class Mensagem {
 
 	//	Mensagens de saudação
 	public static final String OBRIGADOVISITA = "Obrigado por nos visitar, volte sempre!";
+	public static final String OPCAO_SIM_OBRIGADO_UTILIZAR_SISTEMA = "Obrigado por utilizar nossa aplicação, até breve! :P";
 
 	// Mensagem de erro
 	public static final String OPCAO_INVALIDA = "Opção invalida, erro 404...";
