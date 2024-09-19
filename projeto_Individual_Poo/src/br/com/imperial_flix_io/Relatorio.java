@@ -35,7 +35,7 @@ public class Relatorio {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(arquivoRelatorio.toFile(), true))) {
             if (cinemas != null && !cinemas.isEmpty()) { 
                 writer.write("=========================\n");
-                writer.write("         Cinemas\n");
+                writer.write("     Rede de Cinemas     \n");
                 writer.write("=========================\n");
 
                 for (Cinema cinema : cinemas.values()) {
