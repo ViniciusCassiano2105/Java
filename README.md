@@ -40,4 +40,4 @@ permite que o usuário visualize ou imprima relatórios diretamente no console.
 - 
 - ## Requisitos do Sistema 🖥️
 - **☕Java Development Kit (JDK) 17.**
-- **☕Um editor de código, como Eclipse ou IntelliJ.**
+- **🛠️Um editor de código, como Eclipse ou IntelliJ.**
