@@ -1,14 +1,14 @@
 package br.com.imperial_flix_menu;
 
 import br.com.imperial_flix_io.LeitorArquivo;
-import br.com_imperial_flix_principal.Principal;
+import br.com.imperial_flix_principal.Principal;
 
 public class Menu {
 
-	public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
-		LeitorArquivo.leitor("Relatorio");
-		Principal menu = new Principal();
-		menu.menu();
-	}
+        LeitorArquivo.leitor("Relatorio");
+        Principal menu = new Principal();
+        menu.menu();
+    }
 }
