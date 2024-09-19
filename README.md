@@ -34,9 +34,8 @@ permite que o usuário visualize ou imprima relatórios diretamente no console.
 - **🔧Utils: Contém funções auxiliares, como a configuração do Logger.**
 
 ## Estrutura de Pastas 📁
-- **src: Contém o código-fonte do projeto.**
+- **src: Contém o código-fonte e o arquivo .jar do projeto.**
 - **temp: Armazena os arquivos de texto simulando o banco de dados, como relatorio_cinemas.txt e relatorio_filmes.txt.**
-- **jar: Pasta onde será gerado o arquivo .jar do projeto.**
   
 - ## Requisitos do Sistema 🖥️
 - **☕Java Development Kit (JDK) 17.**
